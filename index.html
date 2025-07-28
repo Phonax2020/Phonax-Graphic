@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHONAX GRAPHIC+ | Professional Photography & Design Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .hero-text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-indigo-600">PHONAX <span class="text-purple-600">GRAPHIC+</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-gray-900 hover:text-indigo-600 px-3 py-2 font-medium">Home</a>
+                    <a href="#services" class="text-gray-900 hover:text-indigo-600 px-3 py-2 font-medium">Services</a>
+                    <a href="#book" class="text-gray-900 hover:text-indigo-600 px-3 py-2 font-medium">Book Photoshoot</a>
+                    <a href="#rentals" class="text-gray-900 hover:text-indigo-600 px-3 py-2 font-medium">Rent Equipment</a>
+                    <a href="#shop" class="text-gray-900 hover:text-indigo-600 px-3 py-2 font-medium">Shop</a>
+                    <a href="#membership" class="text-gray-900 hover:text-indigo-600 px-3 py-2 font-medium">Membership</a>
+                    <a href="#contact" class="text-gray-900 hover:text-indigo-600 px-3 py-2 font-medium">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Home</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Services</a>
+                <a href="#book" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Book Photoshoot</a>
+                <a href="#rentals" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Rent Equipment</a>
+                <a href="#shop" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Shop</a>
+                <a href="#membership" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Membership</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white pt-24 pb-20 md:pt-32 md:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 hero-text-shadow">Capture Your <span class="text-yellow-300">Special Moments</span></h1>
+                    <p class="text-xl md:text-2xl mb-8">Professional photography, custom designs, and party rentals for all your special occasions.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#book" class="bg-white text-indigo-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold text-lg transition-all">Book Now</a>
+                        <a href="#membership" class="border-2 border-white text-white hover:bg-white hover:text-indigo-600 px-8 py-3 rounded-full font-semibold text-lg transition-all">Join Membership</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Photography" class="rounded-xl shadow-2xl w-full h-auto">
+                    <div class="absolute -bottom-6 -right-6 bg-yellow-400 text-gray-900 p-4 rounded-xl shadow-lg hidden md:block">
+                        <p class="font-bold text-lg">20% OFF</p>
+                        <p class="text-sm">First Booking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our <span class="text-indigo-600">Services</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive photography and design solutions for all your needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md hover:shadow-xl service-card transition-all">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-camera text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Professional Photography</h3>
+                    <p class="text-gray-600 mb-4">High-quality photoshoots for weddings, birthdays, graduations, and all special events.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i> Wedding Photography
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i> Event Coverage
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i> Portrait Sessions
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md hover:shadow-xl service-card transition-all">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tshirt text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Custom Photo Products</h3>
+                    <p class="text-gray-600 mb-4">Transform your photos into beautiful, lasting keepsakes with our premium printing services.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i> Canvas Prints
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i> Metal Prints
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i> Custom Tumblers & T-shirts
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md hover:shadow-xl service-card transition-all">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chair text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Party Equipment Rentals</h3>
+                    <p class="text-gray-600 mb-4">Everything you need to make your event special, from chairs to lighting equipment.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i> Tables & Chairs
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i> Tents & Canopies
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i> Lighting & Decor
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Photoshoot Section -->
+    <section id="book" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Book Your <span class="text-indigo-600">Photoshoot</span></h2>
+                    <p class="text-xl text-gray-600 mb-8">Schedule your professional photoshoot session with our experienced photographers.</p>
+                    
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500" required>
+                        </div>
+                        <div>
+                            <label for="event-type" class="block text-sm font-medium text-gray-700 mb-1">Event Type</label>
+                            <select id="event-type" name="event-type" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500">
+                                <option value="">Select an option</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="graduation">Graduation</option>
+                                <option value="family">Family Portrait</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="date" class="block text-sm font-medium text-gray-700 mb-1">Preferred Date</label>
+                            <input type="date" id="date" name="date" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Special Requests</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-all">Submit Booking Request</button>
+                    </form>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1554080351-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Photographer at work" class="rounded-xl shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Rentals Section -->
+    <section id="rentals" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Party <span class="text-purple-600">Equipment Rentals</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Everything you need to make your event a success</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Rental Item 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all">
+                    <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Chairs" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Folding Chairs</h3>
+                        <p class="text-gray-600 mb-4">Comfortable and durable chairs for any event.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-purple-600">$2.50/day</span>
+                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rental Item 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tables" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Banquet Tables</h3>
+                        <p class="text-gray-600 mb-4">6ft and 8ft tables available for your event needs.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-purple-600">$12/day</span>
+                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rental Item 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all">
+                    <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tent" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Party Tents</h3>
+                        <p class="text-gray-600 mb-4">10x10 to 20x40 tents available for outdoor events.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-purple-600">$75/day</span>
+                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rental Item 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all">
+                    <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Lighting" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Lighting Equipment</h3>
+                        <p class="text-gray-600 mb-4">Professional lighting for events and photography.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-purple-600">$45/day</span>
+                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-lg transition-all">Need More Equipment? Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Products Section -->
+    <section id="shop" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Shop <span class="text-indigo-600">Photo Products</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Turn your memories into beautiful, lasting keepsakes</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Canvas Print" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-indigo-600 text-white text-xs font-bold px-2 py-1 rounded">BESTSELLER</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Canvas Prints</h3>
+                        <p class="text-gray-600 mb-4">Gallery-quality canvas prints with your favorite photos.</p>
+                        <div class="mb-4">
+                            <span class="text-sm text-gray-500">Sizes:</span>
+                            <div class="flex flex-wrap gap-2 mt-1">
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">8x10"</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">12x16"</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">16x20"</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">24x36"</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-indigo-600">From $29.99</span>
+                            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Metal Print" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Metal Prints</h3>
+                        <p class="text-gray-600 mb-4">Vibrant, durable prints on sleek aluminum panels.</p>
+                        <div class="mb-4">
+                            <span class="text-sm text-gray-500">Sizes:</span>
+                            <div class="flex flex-wrap gap-2 mt-1">
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">8x12"</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">12x18"</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">16x24"</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">20x30"</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-indigo-600">From $39.99</span>
+                            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tumbler" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">NEW</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Custom Tumblers</h3>
+                        <p class="text-gray-600 mb-4">Personalized stainless steel tumblers with your photos.</p>
+                        <div class="mb-4">
+                            <span class="text-sm text-gray-500">Sizes:</span>
+                            <div class="flex flex-wrap gap-2 mt-1">
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">20oz</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">30oz</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-indigo-600">From $24.99</span>
+                            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="T-shirt" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Custom T-shirts</h3>
+                        <p class="text-gray-600 mb-4">High-quality shirts with your custom photo designs.</p>
+                        <div class="mb-4">
+                            <span class="text-sm text-gray-500">Sizes:</span>
+                            <div class="flex flex-wrap gap-2 mt-1">
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">S</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">M</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">L</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">XL</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded text-sm">XXL</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-indigo-600">From $19.99</span>
+                            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="py-20 bg-indigo-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Join Our <span class="text-yellow-300">Membership</span></h2>
+                <p class="text-xl max-w-3xl mx-auto">Exclusive benefits, discounts, and perks for our valued members</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-white text-gray-900 rounded-xl shadow-xl overflow-hidden">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4">Membership Benefits</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>15% discount on all photography services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>10% discount on equipment rentals</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Free 8x10 canvas print annually</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Priority booking for photoshoots</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Exclusive member-only promotions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Free photo editing for one image per month</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 border border-white border-opacity-20">
+                        <h3 class="text-2xl font-bold mb-6">Choose Your Plan</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="bg-white bg-opacity-10 rounded-lg p-6 border border-white border-opacity-20">
+                                <h4 class="text-xl font-semibold mb-2">Monthly</h4>
+                                <p class="text-3xl font-bold mb-4">$15<span class="text-lg">/month</span></p>
+                                <button class="w-full bg-white text-indigo-600 hover:bg-gray-100 py-2 rounded-lg font-medium transition-all">Select Monthly</button>
+                            </div>
+                            <div class="bg-yellow-400 bg-opacity-90 rounded-lg p-6 border border-yellow-300">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="text-xl font-semibold mb-2 text-gray-900">Yearly</h4>
+                                        <p class="text-3xl font-bold mb-4 text-gray-900">$150<span class="text-lg">/year</span></p>
+                                    </div>
+                                    <span class="bg-gray-900 text-white text-xs px-2 py-1 rounded">SAVE $30</span>
+                                </div>
+                                <button class="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 rounded-lg font-medium transition-all">Select Yearly</button>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white bg-opacity-10 rounded-lg p-6 border border-white border-opacity-20">
+                            <h4 class="text-xl font-semibold mb-4">Payment Information</h4>
+                            
+                            <div class="mb-6">
+                                <div class="flex items-center mb-4">
+                                    <input id="credit-card" name="payment-method" type="radio" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500" checked>
+                                    <label for="credit-card" class="ml-3 block text-sm font-medium">Credit/Debit Card</label>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visa/visa-original.svg" class="h-8" alt="Visa">
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mastercard/mastercard-original.svg" class="h-8" alt="Mastercard">
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" class="h-8" alt="Apple Pay">
+                                    </div>
+                                    <div>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" class="h-8" alt="Amazon Pay">
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <input type="text" placeholder="Card Number" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-30 placeholder-white placeholder-opacity-70">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <input type="text" placeholder="MM/YY" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-30 placeholder-white placeholder-opacity-70">
+                                        <input type="text" placeholder="CVV" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-30 placeholder-white placeholder-opacity-70">
+                                    </div>
+                                    <input type="text" placeholder="Name on Card" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-30 placeholder-white placeholder-opacity-70">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <div class="flex items-center mb-4">
+                                    <input id="bank-transfer" name="payment-method" type="radio" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500">
+                                    <label for="bank-transfer" class="ml-3 block text-sm font-medium">Bank Transfer (ACH)</label>
+                                </div>
+                                <div class="space-y-4 hidden" id="bank-details">
+                                    <input type="text" placeholder="Routing Number" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-30 placeholder-white placeholder-opacity-70">
+                                    <input type="text" placeholder="Account Number" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-30 placeholder-white placeholder-opacity-70">
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center mb-6">
+                                <input id="auto-renew" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500" checked>
+                                <label for="auto-renew" class="ml-3 block text-sm font-medium">Auto-renew my membership</label>
+                            </div>
+                            
+                            <button class="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-all">Complete Membership Signup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our <span class="text-purple-600">Clients Say</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Don't just take our word for it - hear from our satisfied customers</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md testimonial-card transition-all">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J.">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-gray-900">Sarah J.</h4>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"The wedding photos PHONAX GRAPHIC+ took for us were absolutely stunning! They captured every special moment perfectly. We'll cherish these memories forever."</p>
+                    <p class="text-sm text-gray-500">Wedding Photography - June 2023</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md testimonial-card transition-all">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael T.">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-gray-900">Michael T.</h4>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"I rented equipment for my daughter's graduation party and everything was in perfect condition. The staff was incredibly helpful in selecting what we needed."</p>
+                    <p class="text-sm text-gray-500">Equipment Rental - May 2023</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md testimonial-card transition-all">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa M.">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-gray-900">Lisa M.</h4>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"The custom canvas print I ordered turned out even better than I imagined! The colors are vibrant and the quality is exceptional. Worth every penny!"</p>
+                    <p class="text-sm text-gray-500">Canvas Print - April 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Get In <span class="text-indigo-600">Touch</span></h2>
+                    <p class="text-xl text-gray-600 mb-8">Have questions or ready to book our services? Contact us today!</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-indigo-100 rounded-lg p-3">
+                                <i class="fas fa-map-marker-alt text-indigo-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Our Location</h3>
+                                <p class="text-gray-600">123 Photography Lane, Creative City, CC 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-indigo-100 rounded-lg p-3">
+                                <i class="fas fa-phone-alt text-indigo-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Phone</h3>
+                                <p class="text-gray-600">(123) 456-7890</p>
+                                <p class="text-gray-600">Mon-Fri: 9am-6pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-indigo-100 rounded-lg p-3">
+                                <i class="fas fa-envelope text-indigo-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Email</h3>
+                                <p class="text-gray-600">info@phonaxgraphic.com</p>
+                                <p class="text-gray-600">Response within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-indigo-100 text-indigo-600 hover:bg-indigo-200 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-indigo-100 text-indigo-600 hover:bg-indigo-200 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-indigo-100 text-indigo-600 hover:bg-indigo-200 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-indigo-100 text-indigo-600 hover:bg-indigo-200 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="bg-white rounded-xl shadow-md p-8">
+                        <div class="mb-6">
+                            <label for="contact-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" id="contact-name" name="contact-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="contact-email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="contact-email" name="contact-email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="contact-subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" id="contact-subject" name="contact-subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="contact-message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-all">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="mt-16 rounded-xl overflow-hidden shadow-xl">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573813345!2d-73.98784492452582!3d40.74844097138992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689872882313!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PHONAX GRAPHIC+</h3>
+                    <p class="text-gray-400 mb-4">Capturing life's precious moments with professional photography and creating beautiful custom products.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-all">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-all">Services</a></li>
+                        <li><a href="#book" class="text-gray-400 hover:text-white transition-all">Book Photoshoot</a></li>
+                        <li><a href="#rentals" class="text-gray-400 hover:text-white transition-all">Rent Equipment</a></li>
+                        <li><a href="#shop" class="text-gray-400 hover:text-white transition-all">Shop Products</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Wedding Photography</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Event Photography</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Custom Prints</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Equipment Rentals</a></li>
+                        <li><a href="#membership" class="text-gray-400 hover:text-white transition-all">Membership</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest offers and updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full text-gray-900 focus:outline-none">
+                        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-r-lg transition-all">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 PHONAX GRAPHIC+. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Payment method toggle
+        document.getElementById('credit-card').addEventListener('change', function() {
+            document.getElementById('bank-details').classList.add('hidden');
+        });
+        
+        document.getElementById('bank-transfer').addEventListener('change', function() {
+            document.getElementById('bank-details').classList.remove('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
